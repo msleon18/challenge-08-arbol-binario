@@ -1,16 +1,33 @@
-# React + Vite
+# Challenge 08 - Árbol Binario de Búsqueda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto para el curso de Estructuras de Datos y Algoritmos. Implementación interactiva de un Árbol Binario de Búsqueda (BST) en React con visualización gráfica de nodos y cálculo de recorridos en tiempo real.
 
-Currently, two official plugins are available:
+## Integrante
+- **Maycol Leon** - msleon18
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción
+Plataforma visual que permite construir y manipular un Árbol Binario de Búsqueda. Incluye operaciones básicas de inserción y búsqueda de nodos, así como la generación automática de los recorridos principales de la estructura.
 
-## React Compiler
+## Tecnologías usadas
+- **Frontend:** React + Vite
+- **Visualización:** react-d3-tree
+- **Lenguaje:** JavaScript (ES6+)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estructura del proyecto
+- `src/App.jsx`: Contiene las clases lógicas `Node` y `BinarySearchTree`, el mapeo de datos a formato D3, los componentes de interfaz y el manejo de estado.
+- `src/main.jsx`: Punto de entrada principal de la aplicación en React.
 
-## Expanding the ESLint configuration
+## Funcionalidades implementadas
+- **Inserción de nodos:** Permite agregar nuevos números garantizando la propiedad del BST (menores a la izquierda, mayores a la derecha).
+- **Búsqueda:** Valida la presencia de un elemento dentro del árbol.
+- **Recorridos del árbol:**
+  - **PreOrder:** Raíz -> Izquierda -> Derecha
+  - **InOrder:** Izquierda -> Raíz -> Derecha (muestra valores ordenados)
+  - **PostOrder:** Izquierda -> Derecha -> Raíz
+- **Visualización interactiva:** Renderizado dinámico del gráfico del árbol jerárquico.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Cómo correr en local
+
+1. Clonar el repositorio o situarse en la carpeta del proyecto:
+```bash
+cd challenge-08
